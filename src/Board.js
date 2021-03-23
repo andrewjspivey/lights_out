@@ -54,10 +54,7 @@ flipCellsAround(coord) {
     flipCell(y + 1, x)
     flipCell(y - 1, x)
 
-    // TODO: flip this cell and the cells around it
 
-    // win when every cell is turned off
-    // TODO: determine is the game has been won
     let hasWon = board.every(row => row.every(cell => !cell))
 
     this.setState({board: board, hasWon: hasWon});
